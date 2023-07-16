@@ -1,0 +1,113 @@
+@import '../../base.scss';
+@import '../../media.scss';
+
+
+.details {
+    width: 100rem;
+    
+    margin: auto;
+    // background: red;
+    padding-bottom: 4rem;
+
+    @include respond(tab-land) {
+        width: 100%;
+    }
+   
+
+    &__img {
+        width: 100%;
+        border-radius: 24px;
+        
+        @include respond(tab-land) {
+            border-radius: 0px;
+        }
+    }
+
+    &__content {
+        margin-top: -8rem;
+        height: auto;
+        background: #fff;
+        padding: 3.2rem;
+        padding-bottom: 3.8rem;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+
+
+        @include respond(tab-port) {
+            margin-bottom: 12rem;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+            padding-top: 8rem;
+            margin-bottom: 3.2rem;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 3.2rem;
+    }
+
+    &__tech {
+        
+        h1 {
+            padding-top: 3.2rem;
+            font-size: 1.8rem;
+        }
+
+        &--list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &--item {
+            background: $primary;
+            padding: 1.2rem 2.4rem;
+            border-radius: 24px;
+            margin-right: 1.2rem;
+            margin-bottom: 1.2rem;
+
+            span {
+                font-family: inherit;
+                font-size: 1.6rem;
+                color: #fff;
+            }
+        }
+
+
+        
+    }
+}
+
+// Projects details
+.details__link {
+    display: flex;
+    border-radius: 24px;
+    margin-right: 1.2rem;
+    transition: all .3s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 1.8rem;
+
+    &--icon {
+        fill: #fff;
+        height: 2.4rem;
+        width: 2.4rem;
+        margin-left: .8rem;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+}
+
+
+
+.padding-top {
+    padding-top: 12rem;
+
+    @include respond(tab-land) {
+        padding-top: 0rem;
+    }
+}

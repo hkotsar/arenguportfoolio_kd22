@@ -1,0 +1,93 @@
+@import '../../base.scss';
+@import '../../media.scss';
+
+.tech {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    span {
+        font-weight: bold;
+        font-size: 1.8rem;
+        margin-right: auto;
+
+        @include respond(big-desktop) {
+            font-size: 2rem;
+        }
+    }
+
+    
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1.5rem;
+        width: 3.2rem;
+
+        height: 3.2rem;
+        // width: 3.2rem;
+        background: #fff;
+        border-radius: 50%;
+        padding: 1.4rem;
+
+        @include respond(big-desktop) {
+            width: 3.2rem;
+            height: 3.2rem;
+        }
+        
+
+        &--icon {
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+    }
+
+    &__score {
+       
+
+        &--icon {
+            width: 2rem;
+            height: 2rem;
+            fill: $green;
+        }
+    }
+
+    
+    &__list {
+        // background: #fff;
+        height: 42rem;
+        // background: red;
+        padding-right: 1.2rem;
+        overflow: auto;
+        margin-top: 3rem;
+
+        @include respond(big-desktop) {
+            height: 62vh;
+        }
+
+        @include respond(macbook) {
+            height: 57vh;
+        }
+
+        @include respond(phone) {
+            padding-right: 1.5rem;
+        }
+
+        &::-webkit-scrollbar {
+            width: 10px;
+            
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #fff;
+            border-radius: 4px;  
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: $green;
+            border-radius: 4px; 
+        }
+    }
+        
+}

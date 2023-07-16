@@ -1,0 +1,63 @@
+@import './media.scss';
+
+// Colors
+$background: #eee;
+$primary: #0d19a3;
+$green: #01a66f;
+$black: #19181a;
+$btn_bg: #000;
+$btn_color: #fff;
+
+// Projects tab colors
+$tab--1: #08d304;
+$tab--2: #05386b;
+$tab--3: #5ab9ea;
+$tab--4: #3500d3;
+$tab--5: #c3073f;
+
+$gradinet_1: rgb(13, 25, 163, 0.55);
+$gradinet_2: rgb(13, 25, 163, 0.55);
+
+.btn {
+    font-size: 1.8rem;
+    background: $btn_bg;
+    color: $btn_color;
+
+    padding: 1.4rem 3.2rem;
+   
+    text-decoration: none;
+    transition: all .3s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+
+    &__all {
+        border-radius: 24rem;
+        font-size: 2.4rem;
+        width: 30%;
+        padding: 1.6rem 3.2rem;
+
+        @include respond(phone) {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+.title {
+    font-size: 3.2rem;
+
+    @include respond(big-desktop) {
+        font-size: 4.8rem;
+    }
+}
+
+.paragraph {
+    font-size: 1.6rem;
+    line-height: 1.8em;
+
+    @include respond(big-desktop) {
+        font-size: 1.8rem;
+    }
+}

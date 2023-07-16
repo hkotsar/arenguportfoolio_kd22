@@ -1,0 +1,284 @@
+@import '../../base.scss';
+@import '../../media.scss';
+
+// SLIDER
+.slider {
+    width: 100%;
+    // background: red;
+    margin: auto;
+
+    position: relative;
+
+    overflow: hidden;
+    height: 57vh;
+
+    @include respond(big-desktop) {
+        height: 64vh;
+    }
+
+   
+
+    &__slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        top: 0;
+        position: absolute;
+        width: auto;
+        margin-top: 2.4rem;
+        padding-left: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        // overflow: visible;
+        transition: transform .4s;
+
+        @include respond(s-desktop) {
+            margin-top: 1.2rem;
+        }
+
+        @include respond(s-desktop-2) {
+            padding-left: 8rem;
+        }
+
+
+        @include respond(macbook) {
+            // margin-top: 10rem;
+            padding-left: 4rem;
+            
+        }
+
+        @include respond(m-desktop) {
+            width: auto;
+            // padding-top: 12rem;
+            padding-left: 10rem; 
+        }
+
+        @include respond(big-desktop) {
+            width: auto;
+            padding-top: 6rem;
+            padding-left: 10rem; 
+        }
+
+        @include respond(xl-desktop) {
+            padding-left: 17rem;
+        }
+
+    }
+
+    &__item {
+        // background: #fff;
+        width: 28rem;
+        border-radius: 24px;
+
+        
+        
+        
+
+       
+
+        @include respond(s-desktop) {
+            width: 24rem;
+        }
+        
+        @include respond(s-desktop-2) {
+            width: 28rem;
+        }
+
+        @include respond(macbook) {
+            width: 40rem;
+        }
+
+        @include respond(m-desktop) {
+            width: 34rem;
+        }
+        
+        @include respond(big-desktop) {
+            width: 40rem;
+        }
+
+        @include respond(xl-desktop) {
+            width: 48rem;
+        }
+
+
+        &--img {
+            width: 100%;
+            height: auto;
+            border-radius: 24px;
+        }
+
+        &--content {
+            margin-top: 1rem;
+            margin-left: 2rem;
+            color: #fff;
+            margin-bottom: 1.8rem;
+
+            @include respond(s-desktop) {
+                margin-bottom: 1.2rem;
+            }
+
+            @include respond(macbook) {
+                margin-top: 2.4rem;
+            }
+
+            @include respond(big-desktop) {
+                margin-top: 2.4rem;
+            }
+
+            
+           
+            h1 {
+                font-size: 1.8rem;
+                margin-bottom: 1.2rem;
+
+                @include respond(s-desktop) {
+                    margin-bottom: 1rem;
+                }
+
+                @include respond(macbook) {
+                    font-size: 2.4rem;
+                    margin-bottom: 1.8rem;
+                }
+
+                @include respond(big-desktop) {
+                    font-size: 3.2rem;
+                }
+
+                
+            }
+
+            p {
+                font-size: 1.4rem;
+                line-height: 1.6em;
+                
+
+                @include respond(big-desktop) {
+                    font-size: 1.8rem;
+                }
+
+                @include respond(macbook) {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        &--link {
+            margin-left: 1.8rem;
+            font-size: 1.6rem;
+            background: $btn_bg;
+            color: #fff;
+            border-radius: 24px;
+
+            
+
+            @include respond(s-desktop) {
+                font-size: 1.4rem;
+            }
+
+            @include respond(big-desktop) {
+                font-size: 1.6rem;
+                
+            }
+
+           
+        }
+    }
+
+    &__div {
+        display: flex;
+    }
+
+    &__btn {
+        
+        height: 5.5rem;
+        width: 5.5rem;
+        border: none;
+        border-radius: 50%;
+        font-family: inherit;
+        background: #fff;
+        cursor: pointer;
+        margin: 0rem 1rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: all .3s;
+
+        @include respond(s-desktop) {
+            height: 4.5rem;
+            width: 4.5rem;
+        }
+
+        @include respond(m-desktop) {
+            height: 6.4rem;
+            width: 6.4rem;
+        }
+
+        @include respond(macbook) {
+            height: 6.2rem;
+            width: 6.2rem;
+        }
+
+        @include respond(big-desktop) {
+            height: 7rem;
+            width: 7rem;
+        }
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+
+        &--icon {
+            height: 3rem;
+            width: 3rem;
+
+            @include respond(big-desktop) {
+                height: 4rem;
+                width: 4rem;
+            }
+
+            @include respond(macbook) {
+                height: 3.8rem;
+                width: 3.8rem;
+            }
+        }
+
+        
+
+        // &--left {
+        //     left: 6%;
+        //     transform: translate(-50%, -50%);
+        // }
+
+        // &--right {
+        //     right: 6%;
+        //     transform: translate(50%, -50%);
+        // }
+    }
+}
+
+.center {
+    display: flex;
+    // margin-top: 2.4rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+
+    @include respond(big-desktop) {
+        margin-top: 1rem;
+        margin-left: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    @include respond(m-desktop) {
+        // margin-top: 8rem;
+        margin-left: 4rem;
+    }
+
+    @include respond(macbook) {
+        // margin-top: 9rem;
+        margin-left: 2.4rem;
+        margin-bottom: 4rem;
+    }
+}
+

@@ -1,0 +1,32 @@
+// Colors
+$background: #eee;
+$primary: #0d19a3;
+$green: #01a66f;
+$black: #19181a;
+$btn_bg: #000;
+$btn_color: #fff;
+
+// Projects tab colors
+$tab--1: #08d304;
+$tab--2: #05386b;
+$tab--3: #5ab9ea;
+$tab--4: #3500d3;
+$tab--5: #c3073f;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+  // font-family: sans-serif;
+}
+
+body {
+  background: $background;
+}
+

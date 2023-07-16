@@ -1,0 +1,17 @@
+@import '../media.scss';
+// Section eductaion
+.education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 0rem;
+    height: 80vh;
+    
+
+    @include respond(phone) {
+        height: 65vh;
+        padding: 10rem 0rem;
+        
+    }
+}

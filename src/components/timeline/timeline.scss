@@ -1,0 +1,284 @@
+@import '../../base.scss';
+@import '../../media.scss';
+
+//Education timeline
+.timeline {
+    position: relative;
+    width: 100rem;
+    margin: 0 auto;
+
+    @include respond(tab-land) {
+        width: 80rem;
+        // background: red;
+    }
+
+    @include respond(tab-port) {
+        // background: blue;
+        width: 62rem;
+    }
+
+    @include respond(phone) {
+        width: 84%;
+        margin: 0;
+        // background: green;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: .4rem;
+        background: #333;
+        top: 0;
+        bottom: 0;
+        left: 45%;
+        margin-left: 4rem;
+       
+
+        @include respond(tab-land) {
+            left: 45%;
+            
+        }
+
+        @include respond(tab-port) {
+            background: #333;
+            left: 70%;
+        }
+
+        @include respond(phone) {
+            left: 0;
+            margin-left: 0rem;
+        }
+    }
+
+    &__container {
+        position: relative;
+        padding: 1rem 4rem;
+        width: 45%;
+        height: 10rem;
+        // background: #fff;
+
+       
+
+        @include respond(tab-land) {
+            width: 40%;
+            padding: 1rem 0rem;
+            height: 14rem;
+        }
+
+        @include respond(tab-port) {
+            width: 60%;
+            padding: 1rem 0rem;
+            height: 14rem;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+            
+        }
+
+       
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 2.5rem;
+            height: 2.5rem;
+            right: 2.6rem;
+            background: $primary;
+            top: 5.7rem;
+            border-radius: 50%;
+            z-index: 2;
+            
+
+            @include respond(tab-land) {
+                right: -1.3rem;
+                top: 5rem;
+            }
+
+            @include respond(tab-port) {
+                right: -2.7rem;
+            }
+
+            @include respond(phone) {
+                width: 3rem;
+                height: 3rem;
+                right: 0;
+                left: -1.4rem;
+                top: 4rem;
+            }
+        }
+    }
+
+    &__left {
+        left: 0;
+
+        @include respond(tab-land) {
+            left: 10%;
+        }
+
+        @include respond(tab-port) {
+            left: 14.5%;
+        }
+
+        @include respond(phone) {
+            left: 0;
+        }
+
+        
+    }
+
+    &__right {
+        left: 45%;
+
+        @include respond(tab-land) {
+            left: 50%;
+        }
+
+        @include respond(tab-port) {
+            left: 14.5%;
+        }
+
+        @include respond(phone) {
+            left: 0;
+        }
+
+        &::after {
+            left: 2.9rem;
+            
+
+            @include respond(tab-land) {
+                left: -1.1rem;
+            }
+
+            @include respond(tab-port) {
+                left: 100.5%;
+                z-index: 1;
+            }
+
+            @include respond(phone) {
+                left: -1.4rem;
+            }
+        }
+    }
+
+    &__last {
+        left: 0;
+
+        @include respond(tab-land) {
+            left: 10%;
+        }
+
+        @include respond(tab-port) {
+            left: 14.5%;
+        }
+
+        @include respond(phone) {
+            left: 0;
+        }
+
+        &::after {
+            box-shadow: 0 0 0 0 rgb(2, 92, 165);
+	        transform: scale(1);
+	        animation: pulse 2s infinite;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        // background: blue;
+        position: relative;
+        border-radius: 6px;
+
+        @include respond(tab-land) {
+            // width: 80%;
+        }
+
+        @include respond(phone) {
+            min-width: 32rem;
+            width: 100%;
+        }
+
+        &--line {
+            border: 2px solid #333;
+            width: 100%;
+
+        }
+    }
+
+    &__year {
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+
+        @include respond(tab-land) {
+            font-size: 2.4rem;
+        }
+
+        @include respond(phone) {
+            margin-left: 2rem;
+            margin-bottom: 1.4rem;
+        }
+    }
+
+    &__text {
+        font-size: 2.4rem;
+        margin-top: 2rem;
+
+        @include respond(tab-land) {
+            font-size: 2.2rem;
+        }
+
+        @include respond(phone) {
+            font-size: 1.8rem;
+            margin-left: 2rem;
+            margin-top: 1.4rem;
+        }
+    }
+
+}
+
+// @include respond(phone) {
+//     .timeline__left::after, .timeline__right::after {
+//         right: -1rem;
+//     }
+// }
+
+
+
+.content--right {
+    text-align: end;
+
+
+    @include respond(tab-port) {
+        text-align: start;
+    }
+
+    @include respond(phone) {
+        text-align: end;
+    }
+}
+
+.content--left {
+    
+    @include respond(phone) {
+        text-align: end;
+    }
+}
+
+// Pulse effect
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}

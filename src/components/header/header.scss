@@ -1,0 +1,136 @@
+@import '../../base.scss';
+@import '../../media.scss';
+
+.header {
+    grid-column: 1 / 5;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 3rem;
+
+    @include respond(big-desktop) {
+        padding: 0rem 5rem;
+    }
+
+    &__logo {
+        margin-right: auto;
+        color: #fff;
+
+        h1 {
+            font-size: 3.2rem;
+        }
+
+        svg {
+            height: 5rem;
+            width: auto;
+
+            @include respond(big-desktop) {
+                height: 6rem;
+            }
+        }
+
+        @include respond(phone) {
+            margin: auto;
+        }
+
+        @include respond(big-desktop) {
+            font-size: 2rem;
+        }
+    }
+
+    @include respond(phone) {
+        padding: 0rem 3rem;
+    }
+
+    @include respond(tab-land) {
+        grid-column: 1 / -1;
+    }
+
+    &__sticky {
+        
+        position: fixed;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 8rem;
+        width: 100%;
+        background: #fff;
+        z-index: 3;
+        padding: 0rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+        @include respond(tab-port) {
+            display: none;
+        }
+        
+        a {
+            color: $primary;
+            font-weight: 600;
+        }
+
+        h1 {
+            display: none;
+            color: #333;
+            margin-right: 0rem !important;
+        }
+    }
+
+}
+
+.nav {
+    
+    &__list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
+    &__item {
+        font-size: 1.6rem;
+        margin: 0rem 1.8rem;
+
+        @include respond(macbook) {
+            font-size: 1.8rem;
+        }
+
+        @include respond(big-desktop) {
+            font-size: 2rem;
+            margin: 0rem 2.2rem;
+        }
+
+        @include respond(xl-desktop) {
+            font-size: 2.4rem;
+        }
+
+        &--link {
+            position: relative;
+            color: #fff;
+            text-decoration: none;
+            padding-bottom: .7rem;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background-color: $primary;
+                bottom: 0;
+                left: 0;
+                transform-origin: right;
+                transform: scaleX(0);
+                transition: transform .3s ease-in-out;
+            }
+
+            &:hover::before {
+                transform-origin: left;
+                transform: scaleX(1);
+            }
+        }
+    }
+
+    @include respond(tab-port) {
+        display: none;
+    }   
+}

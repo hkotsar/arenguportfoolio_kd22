@@ -1,0 +1,536 @@
+@import '../base.scss';
+@import '../media.scss';
+
+// Landpage
+.landpage {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 24rem 24em;
+    grid-template-rows: 8rem 22rem 1fr 1fr 1fr;
+    height: 100vh;
+
+    @include respond(tab-land) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 10rem 25rem 1fr 1fr 1fr;
+    }
+ 
+     @include respond(s-desktop) {
+         grid-template-columns: 1fr 1fr 22rem 1fr 22rem 22rem;
+         grid-template-rows: 8rem 25rem 1fr 1fr 1fr;
+    }
+ 
+    @include respond(s-desktop-2) {
+         grid-template-rows: 8rem 38rem 1fr 1fr 1fr;
+    }
+ 
+    @include respond(macbook) {
+         grid-template-columns: 1fr 1fr 24rem 1fr 24rem 24rem;
+         grid-template-rows: 11rem 55vh 1fr 1fr 1fr;
+    }
+ 
+    @include respond(m-desktop)  {
+         grid-template-columns: 1fr 1fr 32rem 1fr 26rem 26rem;
+         grid-template-rows: 11rem 42rem 1fr 1fr 1fr;
+    }
+ 
+    @include respond(big-desktop) {
+         grid-template-columns: repeat(4, 1fr) 30rem 30rem;
+         grid-template-rows: 11rem 50rem 1fr 1fr 1fr;
+    }
+ 
+    @include respond(xl-desktop) {
+         grid-template-columns: repeat(4, 1fr) 40rem 40rem;
+         grid-template-rows: 11rem 55rem 1fr 1fr 1fr;
+    }
+
+    &__texts {
+        grid-row: 2 / 3;
+        grid-column: 1 / 5;
+        background: #000;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include respond(tab-land) {
+            grid-column: 1 / -1;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 4.2em;
+            margin-bottom: 1.8rem;
+          
+
+            animation-name: movesInRight;
+            animation-duration: 3s;
+
+            @include respond(phone) {
+                font-size: 3.2rem;
+                margin-bottom: 2rem;
+            }
+
+            @include respond(tab-land) {
+                margin-right: 0rem;
+            }
+
+            @include respond(s-desktop) {
+                font-size: 4.8rem;
+            }
+
+            @include respond(s-desktop-2) {
+                font-size: 4.8rem;
+            }
+
+            @include respond(macbook) {
+                font-size: 4.8rem;
+            }
+
+            
+
+            @include respond(big-desktop) {
+                font-size: 7.2rem;
+               
+            }
+
+            @include respond(xl-desktop) {
+                font-size: 7.8rem;
+            }
+
+           
+
+           
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 4.2rem;
+            margin-bottom: 2.4rem;
+            text-align: center;
+
+            animation-name: movesInLeft;
+            animation-duration: 3s;
+
+            @include respond(phone) {
+                font-size: 2.4rem;
+                margin-left: 0rem;
+            }
+
+            @include respond(tab-land) {
+                text-align: center;
+                font-size: 3.2rem;
+                margin-left: 0rem;
+            }
+
+            @include respond(s-desktop-2) {
+                font-size: 3.2rem;
+            }
+
+            @include respond(s-desktop-2) {
+                font-size: 4.8rem;
+            }
+
+            @include respond(macbook) {
+                font-size: 4.8rem;
+            }
+
+            @include respond(big-desktop) {
+                font-size: 5.8rem;
+            }
+
+            @include respond(xl-desktop) {
+                font-size: 7.8rem;
+            }
+
+            
+        }
+
+        h3 {
+            font-size: 3.2rem;
+            color: #ffff;
+            text-align: center;
+
+            animation-name: visibleAnimation;
+            animation-duration: 3s;
+
+
+            @include respond(phone) {
+                font-size: 4rem;
+                margin-left: 0rem;
+            }
+
+            @include respond(big-desktop) {
+                font-size: 4.8rem;
+            }
+        }
+
+        @include respond(phone) {
+            
+        }
+    }
+
+    &__slider {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        grid-row: 1 / 4;
+        grid-column: 5 / 7;
+        // height: 80rem;
+        background: $primary; /* fallback for old browsers */
+        // background: -webkit-linear-gradient(to right, #396afc, #2948ff); /* Chrome 10-25, Safari 5.1-6 */
+        // background: linear-gradient(to right, #396afc, #2948ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        
+
+        @include respond(tab-land) {
+            display: none;
+        }
+    }
+
+    &__img-1 {
+        grid-row: 3 / 7;
+        grid-column: 1 / 3;
+        background-image: 
+        linear-gradient(to bottom, $gradinet_1, $gradinet_1),
+        url('../images/caspar-camille-rubin-89xuP-XmyrA-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__img-2 {
+        grid-row: 3 / 7;
+        grid-column: 4 / 5;
+
+    
+        background-image: 
+        linear-gradient(to bottom, $gradinet_2, $gradinet_2),
+        url('../images/markus-spiske-MgtHZ4zlC1U-unsplash\ \(1\).jpg');
+        background-size: cover;
+        background-position: center;
+        
+
+        @include respond(tab-port) {
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__projects {
+        grid-row: 3 / -1;
+        grid-column: 3 / 4;
+        background: #fff;
+
+       
+
+        @include respond(tab-land) {
+            display: none;
+        }
+    }
+
+    &__about {
+        grid-row: 4 / -1;
+        grid-column: 5 / 6;
+        background: #fff;
+        // height: 22rem;
+
+        @include respond(macbook) {
+            height: 24vh;
+        }
+
+        @include respond(tab-land) {
+            display: none;
+        }
+    }
+
+    &__contact {
+        grid-row: 4 / -1;
+        grid-column: 6 / 7;
+        background: $green;
+
+        // Contact-btn
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        @include respond(tab-land) {
+            display: none;
+        }
+    }
+}
+
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    // margin-left: 1.8rem;
+
+    @include respond(macbook) {
+       margin-top: 2.4rem;
+    }
+
+    @include respond(big-desktop) {
+        margin-top: 2.4rem;
+    }
+    
+    h1 {
+        color: $primary;
+        margin-bottom: 1.5rem;
+        font-size: 2rem;
+
+        @include respond(s-desktop) {
+            margin-bottom: 1.2rem;
+        }
+
+        @include respond(macbook) {
+            font-size: 2.4rem;
+        }
+
+        @include respond(m-desktop) {
+            font-size: 2.8rem;
+        }
+
+        @include respond(big-desktop) {
+           
+            font-size: 3.2rem;
+        }
+
+        @include respond(xl-desktop) {
+            font-size: 4.2rem;
+        }
+    }
+
+    &__list {
+        list-style: none;
+
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+
+        @include respond(s-desktop) {
+            margin-bottom: 1rem;
+        }
+
+        @include respond(xl-desktop) {
+            margin-bottom: 1.8rem;
+        }
+
+        span {
+            font-size: 1.6rem;
+
+            @include respond(macbook) {
+                font-size: 1.8rem;
+            }
+
+            @include respond(m-desktop) {
+                font-size: 2rem;
+            }
+            
+            @include respond(big-desktop) {
+                font-size: 2rem;
+            }
+
+            @include respond(xl-desktop) {
+                font-size: 2.4rem;
+            }
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: $primary;
+            border-bottom: 2px solid $primary;
+            padding: .2rem .5rem;
+            
+            // Animations
+            background-image: linear-gradient(90deg,
+                #fff 0%,
+                #fff 50%,
+                $primary 50%,
+                $primary 100%);
+            
+                background-size: 300%;
+
+                transition: background-position .3s cubic-bezier(.47, .1, 1, .63),
+                color .2s linear;
+                transition-delay: 0.0s, 0.15s;
+
+            &:hover {
+                cursor: pointer;
+                background-position: -50% 100%;
+                color: #fff;
+               
+                .links__icon {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+        fill: $primary;
+        margin-left: 1rem;
+
+        @include respond(big-desktop) {
+            width: 2.2rem;
+            height: 2.2rem;
+            margin-left: 2rem;
+        }
+    }
+}
+
+
+.contact-btn {
+    
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+        border: 5px solid #fff;
+
+        background: $green;
+        padding: 2rem;
+        width: 5rem;
+        height: 5rem;
+
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: all .3s;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+
+        @include respond(big-desktop) {
+            width: 8rem;
+            height: 8rem;
+        }
+    }
+
+    &__icon {
+        width: 3.2rem;
+        height: 3.2rem;
+        fill: #fff;
+
+        @include respond(big-desktop) {
+            width: 5rem;
+            height: 5rem;
+       }
+    }
+}
+
+// Title animations
+@keyframes movesInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+        
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+        
+    }
+}
+
+@keyframes movesInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+        
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes visibleAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+// Arrow animations
+.scroll {
+    margin-top: 1.8rem;
+
+    @include respond(big-desktop) {
+        margin-top: 4rem;
+    }
+
+    @include respond(m-desktop) {
+        margin-top: 6rem;
+    }
+
+    @include respond(macbook) {
+        margin-top: 4rem;
+    }
+
+    span {
+        display: block;
+        width: 1.8rem;
+        height: 1.8rem;
+        border-bottom: 1px solid #fff;
+        border-right: 1px solid #fff;
+        transform: rotate(45deg);
+        margin: -1.8rem;
+        animation: scroll-animation 2s infinite;
+
+        @include respond(big-desktop) {
+            width: 2rem;
+            height: 2rem;
+            margin: -1rem;
+        }
+
+    
+        @include respond(macbook) {
+            width: 2rem;
+            height: 2rem;
+            margin: -1rem;
+        }
+
+        &:nth-child(2) {
+            animation-delay: .2s;
+        }
+
+        &:nth-child(3) {
+            animation-delay: .4s;
+        }
+    }
+}
+
+@keyframes scroll-animation {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-2rem, -2rem);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(2rem, 2rem);
+    }
+}

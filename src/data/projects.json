@@ -1,0 +1,253 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "Panga rakendus",
+            "subtext": "Vahendite kasutamine prototüüpimiseks",
+            "icon": "icon-embed2",
+            "category": "arendus",
+            "image": "/images/veebiarendus.png",
+            "alt": "Panga rakendus",
+            "content": "Vahendite kasutamine prototüüpimiseks",
+            "tech": [ 
+                { "name": "Moqups"}
+               
+            ],
+            "links": [ 
+                { "name": "Prototüübi link", "link": "https://app.moqups.com/5WCnwWFtIGVpddKiIhrHdx6HuS0slupA/view/page/a045c2f3d"}
+              
+            ]
+                
+            
+        },
+        {
+            "id": 2,
+            "title": "Avasta Tartut",
+            "subtext": "Aasta tegija võistlus 2023. 1.koht UX/UI disainerite kutsevõistlustel.",
+            "icon": "icon-figma",
+            "category": "ux_ui",
+            "image": "/images/avasta_tartut.jpg",
+            "alt": "Avasta Tartut",
+            "content": "Aasta Tegija 2023 - UX/UI disainerite kutsevõistlus 1.koht. Võistlus toimus 7. märtsil ning ülesandeks oli kujundada interaktiivne prototüüp teemal Avasta Tartut. Prototüübi eesmärk oli tutvustada turistidele või Tartuga lähemalt tutvuda soovijatele Tartu vaatamisväärsusi ja vabaaja veetmise kohti. ",
+            "tech": [ 
+                { "name": "Figma"},
+                { "name": "Illustrator"}
+            ],
+            "links": [ 
+                { "name": "Figma link", "link": "https://www.figma.com/proto/Z3YRufBfUXetkP0DJiGaNL/V%C3%B5istlus-%C3%BClesanne-eelt%C3%B6%C3%B6?node-id=232%3A3567&scaling=scale-down&page-id=232%3A3566&starting-point-node-id=232%3A3567"},
+                { "name": "Dokumentatsioon", "link": "https://docs.google.com/document/d/1bauy65FJzZOsQ8Hj_SeX-8S9B7tf-ve_5j_f3s20jMM/edit?usp=sharing"},
+                { "name": "Kohtunike tagasiside", "link": "https://docs.google.com/document/d/1tQmXvdZiSkjSE2kMUOPc9ZYexm2mXRYHQxJyW2xCNFU/edit?usp=sharing"}
+    
+            ]
+        },
+        {
+            "id": 3,
+            "title": "UX/UI disaini portfoolio",
+            "subtext": "UX/UI disaineri erialal (Tartu Rakenduslik Kolledž) õpingute raames loodud portfoolio",
+            "icon": "icon-figma",
+            "category": "ux_ui",
+            "image": "/images/arenguportfoolio.jpg",
+            "alt": "UX/UI disaini portfoolio",
+            "content": "UX/UI disaini arenguportfoolio, mis on selle eriala lõputöö Tartu Rakenduslik kolledž-is.",
+            "tech": [ 
+                { "name": "Figma"},
+                { "name": "HTML"},
+                { "name": "CSS"},
+                { "name": "Javascript"},
+                { "name": "PHP"}
+            ],
+            "links": [
+                { "name": "Figma link", "link": "https://www.figma.com/file/0G7aygImBHGjGwobTo0RbZ/Arenguporfoolio?node-id=105%3A47&t=fi1lpRR79QXAbfq0-1"},
+                { "name": "Dokumentatsioon", "link": "https://docs.google.com/document/d/1BiMT8IUMBpsN9Cn915Gxrri3rhH2BCw2OzG1B2Rvfn0/edit?usp=sharing"}
+            ]
+        },
+        {
+            "id": 4,
+            "title": "UX/UI disaini portfoolio",
+            "subtext": "UX/UI disaineri erialal (Tartu Rakenduslik Kolledž) õpingute raames loodud portfoolio",
+            "icon": "icon-embed2",
+            "category": "arendus",
+            "image": "/images/arenguportfoolio.jpg",
+            "alt": "UX/UI disaini portfoolio",
+            "content": "UX/UI disaini arenguportfoolio, mis on selle eriala lõputöö Tartu Rakenduslik kolledž-is.",
+            "tech": [ 
+                { "name": "Figma"},
+                { "name": "HTML"},
+                { "name": "CSS"},
+                { "name": "Javascript"},
+                { "name": "PHP"}
+            ],
+            "links": [ 
+                { "name": "Figma link", "link": "https://www.figma.com/file/0G7aygImBHGjGwobTo0RbZ/Arenguporfoolio?node-id=105%3A47&t=fi1lpRR79QXAbfq0-1"},
+                { "name": "Dokumentatsioon", "link": "https://docs.google.com/document/d/1BiMT8IUMBpsN9Cn915Gxrri3rhH2BCw2OzG1B2Rvfn0/edit?usp=sharing"}
+            ]
+        },
+        {
+            "id": 5,
+            "title": "E-commerce mobile app",
+            "subtext": "Interaktiivse prototüübi loomine",
+            "icon": "icon-figma",
+            "category": "ux_ui",
+            "image": "/images/e-commerce-app.jpg",
+            "alt": "E-commerce mobile app",
+            "content": "Kooli projekt, kus tuli välja mõelda oma kujundus ning teha interaktiivne prototüüb.",
+            "tech": [ 
+                { "name": "Figma"}
+            ],
+            "links": [ 
+                { "name": "Figma link", "link": "https://www.figma.com/proto/xSmTmRds3piQcvcR3TiHoj/E-commerce-mobile-app?node-id=109-287&scaling=scale-down&page-id=0%3A1&starting-point-node-id=109%3A287"}
+            ]
+        },
+        {
+            "id": 9,
+            "title": "Visiitkaart",
+            "subtext": "Graafilise disaini aine raames visiitkaaardi tegemine",
+            "icon": "icon-adobeillustrator",
+            "category": "graafika",
+            "image": "/images/visiitkaart.jpg",
+            "alt": "Visiitkaart",
+            "content": "",
+            "tech": [ 
+                { "name": "Illustrator"}
+            ],
+            "links": [
+                { "name": "Pdf formaat", "link": "https://drive.google.com/file/d/11OcuJq3qU2eHjsvAQ1wGWLqzgV2tDxnq/view?usp=sharing"}
+            ]
+        },
+        {
+            "id": 10,
+            "title": "Illustrator: 3D efektid",
+            "subtext": "Graafilise disaini tunnis 3D efektide õppimine",
+            "icon": "icon-adobeillustrator",
+            "category": "graafika",
+            "image": "/images/3d-phone-heiki-kotsar.jpg",
+            "alt": "Illustrator 3D",
+            "content": "Graafilise disaini tunnis 3D efektide õppimine.",
+            "tech": [ 
+                { "name": "Illustrator"}
+            ],
+            "links": [
+             
+            ]
+        },
+        {
+            "id": 11,
+            "title": "Frillice kasutajakogemuse analüüs",
+            "subtext": "7-nädalane UX analüüsi projekt",
+            "icon": "icon-figma",
+            "category": "ux",
+            "image": "/images/frillice.jpg",
+            "alt": "Frillice",
+            "content": "Kooli projekt mille eesmärk oli  läbi erinevate UX analüüsi meetodite selgitada välja Frillice toitumise äpp-i sihtrühm ja testida nendega toidulaua funktsionaalsuse kasutatavust.",
+            "tech": [ 
+                { "name": "Figma"}
+            ],
+            "links": [
+                 { "name": "Kasutatavuse test ", "link": "https://docs.google.com/document/d/1rugzOZXUiFbK-ozurHJeMiRiMooNkWLmCX1HY7smXNA/edit?usp=sharing"}
+            ]
+        },
+        {
+            "id": 123,
+            "title": "Heikki Mägi koduleht",
+            "subtext": "Frillice juhile personaalne koduleht. Disain ja arendus (Figma, Wordpress).",
+            "icon": "icon-wordpress",
+            "category": "sisuhaldus",
+            "image": "images/wordpress.png",
+            "alt": "Frillice äpp",
+            "content": "Saadud infoga tutvunud hakkasin järgmisena Figmas tegema disainikavandid mida vastavalt tagasisidele muutsin ja täiendasin. Kodulehe sektsioonid paigas hakkasin katsetama erinevaid värvilahendusi. Viimased parandused disainis tehtud siis alustasin arendus protsessiga. ",
+            "tech": [ 
+                { "name": "Figma"},
+                { "name": "Wordpress"}
+            ],
+            "links": [
+                 { "name": "Koduleht", "link": "https://heikkimagi.com/"}
+            ]
+        }
+    ],
+    "school": [
+        {
+            "id": 23,
+            "title": "Psühholoogia ja suhtlemine",
+            "subtext": "Suhtlemise alused, suhtlemise psühholoogiline analüüs, reklaamipsühholoogia.",
+            "icon": "icon-school",
+            "category": "Education",
+            "image": "images/Psyhholoogia.png",
+            "subjects": [
+                { 
+                "title": "1. IT-süsteemide riistvara",
+                 "content": "Selles aines oli kokku kaks ülesannet, tuli komplekteerida lähteülesande põhiselt vastav lauaarvuti ja pidi mõistma riistvara ja rakenduste omavahelisi seoseid." 
+                },
+                { 
+                "title": "2. Operatsioonissüsteemid",
+                 "content": "Selles aines õppisin operatsioonisüsteemide ajalugu, lisaks sai tuntumaid süsteeme ka paigaldatud virtuaalarvuti, et õppida neid paremini tundma. Paigaldasin Windows, Linux ja Mac op süsteeme. Peale selle õppisin selles aines ka kasutama Dockerit." 
+                },
+                { 
+                "title": "3. Arvutivõrkude alused",
+                 "content": "Selles aines õppisin operatsioonisüsteemide ajalugu, lisaks sai tuntumaid süsteeme ka paigaldatud virtuaalarvuti, et õppida neid paremini tundma. Paigaldasin Windows, Linux ja Mac op süsteeme. Peale selle õppisin selles aines ka kasutama Dockerit." 
+                }
+            ]
+        },
+        {
+            "id": 44,
+            "title": "Arvutite riistvara ja võrgud",
+            "subtext": "Operatsioonisüsteemide haldamine, arvutivõrgu põhimõtete mõistmine, riistvara süsteemid jne.",
+            "icon": "icon-school",
+            "category": "Education",
+            "image": "images/Arvutiteriistvara_ja_võrgud.png",
+            "subjects": [
+                { 
+                "title": "1. IT-süsteemide riistvara",
+                 "content": "Selles aines oli kokku kaks ülesannet, tuli komplekteerida lähteülesande põhiselt vastav lauaarvuti ja pidi mõistma riistvara ja rakenduste omavahelisi seoseid." 
+                },
+                { 
+                "title": "2. Operatsioonissüsteemid",
+                 "content": "Selles aines õppisin operatsioonisüsteemide ajalugu, lisaks sai tuntumaid süsteeme ka paigaldatud virtuaalarvuti, et õppida neid paremini tundma. Paigaldasin Windows, Linux ja Mac op süsteeme. Peale selle õppisin selles aines ka kasutama Dockerit." 
+                },
+                { 
+                "title": "3. Arvutivõrkude alused",
+                 "content": "Selles aines õppisin operatsioonisüsteemide ajalugu, lisaks sai tuntumaid süsteeme ka paigaldatud virtuaalarvuti, et õppida neid paremini tundma. Paigaldasin Windows, Linux ja Mac op süsteeme. Peale selle õppisin selles aines ka kasutama Dockerit." 
+                }
+            ]
+
+        },
+        {
+            "id": 544,
+            "title": "Projektijuhtimise alused",
+            "subtext": "IT korraldus, meeskonnatöö alused ja projektijuhtimine",
+            "icon": "icon-school",
+            "category": "education",
+            "image": "images/Projektijuhtimise_alused.png",
+            "subjects": [
+                { 
+                "title": "1. IT-süsteemide riistvara",
+                 "content": "Selles aines oli kokku kaks ülesannet, tuli komplekteerida lähteülesande põhiselt vastav lauaarvuti ja pidi mõistma riistvara ja rakenduste omavahelisi seoseid." 
+                },
+                { 
+                "title": "2. Operatsioonissüsteemid",
+                 "content": "Selles aines õppisin operatsioonisüsteemide ajalugu, lisaks sai tuntumaid süsteeme ka paigaldatud virtuaalarvuti, et õppida neid paremini tundma. Paigaldasin Windows, Linux ja Mac op süsteeme. Peale selle õppisin selles aines ka kasutama Dockerit." 
+                },
+                { 
+                "title": "3. Arvutivõrkude alused",
+                 "content": "Selles aines õppisin operatsioonisüsteemide ajalugu, lisaks sai tuntumaid süsteeme ka paigaldatud virtuaalarvuti, et õppida neid paremini tundma. Paigaldasin Windows, Linux ja Mac op süsteeme. Peale selle õppisin selles aines ka kasutama Dockerit." 
+                }
+            ]
+
+        },
+        {
+            "id": 144,
+            "title": "Karjääriplaneerimine ja ettevõtlus",
+            "subtext": "Õppemoodul on varasemalt läbitud Noorem tarkvaraarendaja eriala kursusel Tartu Kutsehariduskeskuses (VS18)",
+            "icon": "icon-school",
+            "category": "vota",
+            "image": "images/Võta.png"
+        },
+        {
+            "id": 145,
+            "title": "Programmeerimise alused",
+            "subtext": "Õppemoodul on varasemalt läbitud Noorem tarkvaraarendaja eriala kursusel Tartu Kutsehariduskeskuses (VS18)",
+            "icon": "icon-school",
+            "category": "vota",
+            "image": "images/Võta.png"
+        }
+    ]
+}
